@@ -20,8 +20,8 @@ processing and probable migration to an SQLite3 db.
 
 ---
 
-`get_ac_json.py` fetches the JSON data for US Area Codes  
-`clean_area_code_data.py` removes the 'country' key, which is unchanging  
+[get_ac_json.py][get] fetches the JSON data for US Area Codes  
+[clean_area_code_api_data.py][clean] removes the 'country' key, which is unchanging  
 for all the entries. Then writes the data back out to `US_area_codes.json`
 
 ---
@@ -29,3 +29,10 @@ for all the entries. Then writes the data back out to `US_area_codes.json`
 It's released under a Public Domain license. Feel free to incorporate any  
 part of it in your own project(s) w/o attribution. Not that there's anything  
 special here :stuck_out_tongue_winking_eye:
+
+## ToDo:
++ add some header checking after Response is returned once I figure out how this api does rate-limiting
+
+
+[clean]: clean_area_code_api_data.py
+[get]: get_ac_json.py
