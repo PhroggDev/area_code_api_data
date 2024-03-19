@@ -12,7 +12,7 @@ if resp.status_code == 200:
     print("So good so far...")
     print(f"Server returned http status {resp.status_code}")
     json_content = resp.json()
-    print("Saving retrieved data to a variable...")
+    print("Saved retrieved data to a variable...")
 
 with open(SAVEFILE, "w", encoding="utf-8") as file:
     json.dump(json_content, file)
