@@ -1,5 +1,4 @@
-"""This script removes the unchanging key 'US' from downloaded area
-area code data"""
+"""This script removes the unchanging key 'US' from downloaded area code number data"""
 import json
 
 DATAFILE = "area_codes.json"
