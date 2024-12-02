@@ -14,6 +14,8 @@ if resp.status_code == 200:
     json_content = resp.json()
     print("Saved retrieved data to a variable...")
 
-with open(SAVEFILE, "w", encoding="utf-8") as file:
-    json.dump(json_content, file)
-    print(f"Saved JSON Data to {SAVEFILE}")
+    with open(SAVEFILE, "w", encoding="utf-8") as file:
+        json.dump(json_content, file)
+        print(f"Saved JSON Data to {SAVEFILE}")
+else:
+    print("Something go boo boo...")
